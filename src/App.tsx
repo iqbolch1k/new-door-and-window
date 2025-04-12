@@ -1,3 +1,4 @@
+import CustomerOpinion from "./components/customerOpinion/CustomerOpinion"
 import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
 import Navbar from "./components/navbar/Navbar"
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <Header/>
+      <CustomerOpinion/>
       <Todorder/>
       <Footer/>
     </div>
