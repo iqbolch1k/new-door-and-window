@@ -4,7 +4,7 @@ import facebook from '../../assets/images/icons/faceBook.png'
 function Footer() {
   return (
     <div className="md:px-5 sm:px-5 continer max-[640px]:px-3">
-      <div className="border-y border-boderColor grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-14 mt-1 bg-gray-50 text-sm text-gray-800">
+      <div className="border-y border-boderColor grid grid-cols-1 md:grid-cols-3 gap-6 py-10 mt-1 bg-gray-50 text-sm text-gray-800">
         <ul className="flex flex-col gap-2">
           <li className=" font-semibold  text-dark text-xl">Eshik deraza</li>
           <li className="text-[15px] font-normal">Qo'llab quvvatlash</li>

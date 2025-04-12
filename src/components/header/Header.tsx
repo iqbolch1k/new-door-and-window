@@ -8,7 +8,7 @@ function Header() {
                 <div className='text-xl text-dark uppercase font-semibold'>
                     Eshik deraza
                 </div>
-                <div className='flex items-center justify-between h-10 border border-boderColor rounded-lg max-w-[31%] w-full'>
+                <div className='flex items-center justify-between h-10 border border-boderColor rounded-lg max-w-[31%] max-[640px]:max-w-[60%] w-full '>
                     <input className='w-[90%] px-4 bg-white' type="text" />
                     <img className='w-6 h-6 mx-2' src={search} alt="" />
                 </div>
