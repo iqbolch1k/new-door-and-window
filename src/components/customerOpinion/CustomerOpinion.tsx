@@ -38,34 +38,36 @@ function CustomerOpinion() {
         },
     ]
     return (
-        <div className='md:px-5 sm:px-5 continer max-[640px]:px-3 '>
-            <h2 className="text-dark text-[35px] font-medium mb-7">Mijozlar fikri</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-2 w-full items-center gap-8 my-16'>
-                <div>
+        <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 py-10">
+            <h2 className="text-dark text-2xl sm:text-3xl md:text-4xl font-semibold mb-14 text-center sm:text-left">
+                Mijozlar fikri
+            </h2>
+
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+                <div className="w-full">
                     <Carousel
-                        opts={{
-                            align: "center",
-                        }}
+                        opts={{ align: "center" }}
                         orientation="vertical"
-                        className="h-[520px] w-full flex flex-col items-center justify-center max-[1024px]:h-[330px]"
+                        className="h-[520px] max-[768px]:h-[210px] w-full flex flex-col items-center justify-center "
                     >
-                        <CarouselContent className="-mt-1 h-full">
+                        <CarouselContent className="-mt-1 h-full ">
                             {testimonials.map((testimonial, index) => (
-                                <CarouselItem key={index} className="md:basis-1">
-                                    <div className="p-1">
-                                        <div className="bg-[#F3F3F3] px-6 py-4 rounded-2xl shadow-md max-w-[550px] relative max-[1024px]:w-full hover:bg-dark hover:text-[#FFFFFF]">
-                                            <p className="text-gray-700 text-[14px] mb-4 hover:text-[#FFFFFF]">“{testimonial.message}”</p>
-                                            <div className="flex items-center space-x-4">
+                                <CarouselItem key={index} className="md:basis-3">
+                                    <div className="p-2">
+                                        <div className="bg-[#F3F3F3] hover:bg-dark transition-colors duration-300 text-gray-800 hover:text-white px-6 py-5 rounded-2xl shadow-lg h-full relative max-[768px]:h-150px">
+                                            <p className="text-sm mb-5">“{testimonial.message}”</p>
+                                            <div className="flex items-center gap-4">
                                                 <img
                                                     src={avatarUrl}
+                                                    alt="User avatar"
                                                     className="w-10 h-10 rounded-full object-cover"
                                                 />
                                                 <div>
-                                                    <p className="text-gray-900 font-semibold hover:text-[#FFFFFF]">{testimonial.name}</p>
-                                                    <p className="text-gray-500 text-sm hover:text-[#FFFFFF]">{testimonial.position}</p>
+                                                    <p className="font-semibold">{testimonial.name}</p>
+                                                    <p className="text-sm text-gray-500 hover:text-white">{testimonial.position}</p>
                                                 </div>
-                                                <div className='absolute right-11 bottom-0'>
-                                                    <img src={tinish} alt="" />
+                                                <div className="absolute right-5 bottom-4 w-8 h-8">
+                                                    <img src={tinish} alt="quote icon" className="w-full h-full object-contain" />
                                                 </div>
                                             </div>
                                         </div>
@@ -77,11 +79,12 @@ function CustomerOpinion() {
                         <CarouselNext />
                     </Carousel>
                 </div>
-                <div className='w-full max-[1024px]:hidden'>
-                    <img src={diffrence} />
+                <div className="w-full flex justify-center lg:justify-end max-[1025px]:hidden">
+                    <img src={diffrence} alt="Difference" className="rounded-xl shadow-md max-w-full h-auto" />
                 </div>
             </div>
         </div>
+
     )
 }
 

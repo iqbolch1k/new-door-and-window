@@ -1,0 +1,98 @@
+import Product from "./Product"
+import Productfilter from "./Productfilter"
+
+const products = [
+    {
+        id: 1,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "MDF",
+        labelColor: "text-green-600",
+        price: "1 000 000 so‘m",
+        oldPrice: "1 200 000 so‘m",
+        discount: true,
+        comments: 40,
+    },
+    {
+        id: 2,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "AKFA",
+        labelColor: "text-green-500",
+        price: "1 200 000 so‘m",
+        comments: 40,
+    },
+    {
+        id: 3,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "MDF",
+        labelColor: "text-green-600",
+        price: "1 050 000 so‘m",
+        oldPrice: "1 300 000 so‘m",
+        discount: true,
+        comments: 30,
+    },
+    {
+        id: 4,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "AKFA",
+        labelColor: "text-green-500",
+        price: "1 150 000 so‘m",
+        comments: 35,
+    },
+    {
+        id: 5,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "MDF",
+        labelColor: "text-green-600",
+        price: "900 000 so‘m",
+        oldPrice: "1 100 000 so‘m",
+        discount: true,
+        comments: 28,
+    },
+    {
+        id: 6,
+        image: "/images/door1.png",
+        name: "MDF Eshiklar",
+        size: "120x200 sm",
+        type: "1 qanotli",
+        label: "AKFA",
+        discount: true,
+        labelColor: "text-green-500",
+        price: "1 300 000 so‘m",
+        comments: 50,
+    },
+]
+
+
+function Products() {
+    return (
+        <>
+            <Productfilter title="Mahsulotlar" />
+            <div className="md:px-5 sm:px-5 continer max-[640px]:px-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                    {
+                        products.map(product => (
+                            <Product key={product.id} {...product} />
+                        ))
+                    }
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Products
