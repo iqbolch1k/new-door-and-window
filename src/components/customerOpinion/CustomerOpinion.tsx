@@ -38,11 +38,10 @@ function CustomerOpinion() {
         },
     ]
     return (
-        <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 py-10">
-            <h2 className="text-dark text-2xl sm:text-3xl md:text-4xl font-semibold mb-14 text-center sm:text-left">
+        <div className="md:px-5 sm:px-5 continer max-[640px]:px-3 flex flex-col gap-14">
+            <h2 className="text-dark text-4xl sm:text-3xl md:text-4xl font-semibold sm:text-left mt-12">
                 Mijozlar fikri
             </h2>
-
             <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <div className="w-full">
                     <Carousel

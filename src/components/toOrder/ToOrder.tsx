@@ -9,7 +9,7 @@ function Todorder() {
                         biz bilan yarating
                     </h2>
                     <p className='text-sm font-light text-white pt-4'>Uslubni yaratishda bizning maxsus xodimlarimiz sizga yordam berishadi</p>
-                    <button className='text-dark rounded-lg px-8 py-2 bg-white mt-10 max-[950px]:px-6 max-[950px]:py-1 max-[950px]:text-[12px]'>Buyurtma qilish</button>
+                    <button className='text-dark rounded-lg px-8 py-2 bg-white mt-10 max-[950px]:px-4 max-[950px]:py-2 max-[950px]:text-[18px]'>Buyurtma qilish</button>
                 </div>
                 <img className='w-full object-cover h-[300px] max-[950px]:h-[270px] rounded-lg ' src={bgImg} alt="" />
             </div>

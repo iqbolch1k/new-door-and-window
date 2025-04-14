@@ -90,6 +90,7 @@ function Products() {
                         ))
                     }
                 </div>
+                <p className='mt-11 text-center underline cursor-pointer'>Ko‘proq ko‘rish</p>
             </div>
         </>
     )
