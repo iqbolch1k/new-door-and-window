@@ -32,7 +32,7 @@ function Product({ name, size, type, label, price, discount, comments, id }: Pro
                         <p className='text-[14px] font-normal text-[#858585]'>{size}* {type}</p>
                     </div>
                     <div>
-                        <p>yulduz</p>
+                        <p>⭐⭐⭐⭐⭐</p>
                         <p className='text-[#9E9E9E] text-[10px]'>{comments} komment</p>
                     </div>
                 </div>
