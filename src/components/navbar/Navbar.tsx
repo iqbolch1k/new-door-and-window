@@ -1,5 +1,5 @@
-import location from '../../assets/images/icons/Vector.png'
-import phone from '../../assets/images/icons/phone_icon.png'
+import location from '../../assets/images/icons/location.svg'
+import phone from '../../assets/images/icons/phone_icon.svg'
 function Navbar() {
   const flex_style = 'flex items-center'
   return (

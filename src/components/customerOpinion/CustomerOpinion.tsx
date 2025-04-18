@@ -1,5 +1,5 @@
 import diffrence from '../../assets/images/png-imges/difference.png'
-import tinish from '../../assets/images/icons/mijozlar_bg_icon.png'
+import tinish from '../../assets/images/icons/mijozlar_bg_icon.svg'
 import avatarUrl from '../../assets/images/png-imges/avatar.png'
 // import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -47,14 +47,14 @@ function CustomerOpinion() {
                     <Carousel
                         opts={{ align: "center" }}
                         orientation="vertical"
-                        className="h-[520px] max-[768px]:h-[210px] w-full flex flex-col items-center justify-center "
+                        className="h-[520px] max-[768px]:h-[250px] w-full flex flex-col items-center justify-center "
                     >
                         <CarouselContent className="-mt-1 h-full ">
                             {testimonials.map((testimonial, index) => (
                                 <CarouselItem key={index} className="md:basis-3">
                                     <div className="p-2">
-                                        <div className="bg-[#F3F3F3] hover:bg-dark transition-colors duration-300 text-gray-800 hover:text-white px-6 py-5 rounded-2xl shadow-lg h-full relative max-[768px]:h-150px">
-                                            <p className="text-sm mb-5">“{testimonial.message}”</p>
+                                        <div className="bg-[#F3F3F3] hover:bg-dark transition-colors duration-300 text-gray-800 hover:text-white px-6 py-5 rounded-2xl shadow-lg max-[768px]:h-[220px] max-[768px]:py-10 relative flex flex-col justify-between">
+                                            <p className="text-sm mb-5 max-[768px]:mt-4">“{testimonial.message}”</p>
                                             <div className="flex items-center gap-4">
                                                 <img
                                                     src={avatarUrl}

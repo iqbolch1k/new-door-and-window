@@ -1,6 +1,9 @@
-import telegram from '../../assets/images/icons/telegram.png'
-import instagram from '../../assets/images/icons/instagram.png'
-import facebook from '../../assets/images/icons/faceBook.png'
+import telegram from '../../assets/images/icons/telegram.svg'
+import instagram from '../../assets/images/icons/instagram.svg'
+import facebook from '../../assets/images/icons/faceBook.svg'
+import gmail_icon from '../../assets/images/icons/gmail_icon.svg'
+import phone from '../../assets/images/icons/phone_icon.svg'
+import location from '../../assets/images/icons/location.svg'
 function Footer() {
   return (
     <div className="md:px-5 sm:px-5 continer max-[640px]:px-3">
@@ -8,9 +11,9 @@ function Footer() {
         <ul className="flex flex-col gap-2">
           <li className=" font-semibold  text-dark text-xl">Eshik deraza</li>
           <li className="text-[15px] font-normal">Qo'llab quvvatlash</li>
-          <li className="text-[15px] font-normal">+998 99 999 99 99</li>
-          <li className="text-[15px] font-normal">Olmazor, Toshkent</li>
-          <li className="text-[15px] font-normal" >Eshikrom@gmail.com</li>
+          <li className="text-[15px] font-normal flex items-center gap-1"><img src={phone} alt="" /> +998 99 999 99 99</li>
+          <li className="text-[15px] font-normal flex items-center gap-1"><img src={location} alt="" /> Olmazor, Toshkent</li>
+          <li className="text-[15px] font-normal flex items-center gap-1"><img src={gmail_icon} alt="" /> Eshikrom@gmail.com</li>
         </ul>
 
         <ul className="flex flex-col gap-2">

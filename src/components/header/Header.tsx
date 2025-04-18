@@ -1,10 +1,11 @@
-import search from '../../assets/images/icons/search_icon.png'
-import shop from '../../assets/images/icons/shoppiing_icon.png'
-import like from '../../assets/images/icons/like_icon.png'
+import search from '../../assets/images/icons/search_icon.svg'
+import shop from '../../assets/images/icons/product_dark.svg'
+import like from '../../assets/images/icons/like_icon.svg'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 function Header() {
     const [modal, setModal] = useState<boolean>(false)
-
+    const navigate = useNavigate()
     return (
         <div className="md:px-5 sm:px-5 continer max-[640px]:px-3 relative">
             <div className="flex items-center justify-between py-5 border-b border-boderColor">
@@ -25,7 +26,7 @@ function Header() {
                     <div className='cursor-pointer'>
                         <img src={like} alt="" />
                     </div>
-                    <div className='rounded-md px-3 py-[7px] cursor-pointer hover:bg-lightGray text-dark'>
+                    <div onClick={() => navigate('/login')} className='rounded-md px-3 py-[7px] cursor-pointer hover:bg-lightGray text-dark'>
                         Kirish
                     </div>
                 </div>
