@@ -17,7 +17,7 @@ interface ProductProps {
     in_stock: boolean;
     like: boolean;
 }
-function Product({ name, sizes, price, is_discounted, id, brand, thumbnail, next_price, category }: ProductProps) {
+function Product({ name, sizes, price, is_discounted, id, thumbnail, next_price, category }: ProductProps) {
 
     const navigate = useNavigate();
     return (
