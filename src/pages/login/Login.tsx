@@ -25,22 +25,21 @@ function Login() {
     }
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (formData.username || formData.phone || formData.location) {
-            setError(true)
-        } else {
-            setError(false)
-            console.log("foydalanuvchi malumotlari", formData);
+        if (!formData.username || !formData.phone || !formData.location) {
+            setError(true);
+            setTimeout(() => {
+                setError(false);
+            }, 3000);
+            return;
         }
-        setTimeout(() => {
-            setError(false)
-        }, 2000)
+        setError(false);
+        console.log("Foydalanuvchi ma'lumotlari:", formData);
         setFormData({
             username: '',
             location: '',
             phone: '+998'
         });
     };
-    console.log(error);
 
     return (
         <div className="relative h-screen overflow-hidden">
@@ -50,6 +49,7 @@ function Login() {
                     title="Inputlar bo‘sh bo‘lmasligi kerak"
                     className={`${error ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'}`}
                 />
+
 
             </div>
             <div className="absolute top-0 w-full h-screen bg-[#000000ca] z-20 flex flex-col items-center justify-center p-5">
